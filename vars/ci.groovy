@@ -6,12 +6,22 @@ def call(){
         stages{
             stage('compile/build'){
                 steps {
-                    echo 'build'
+                    common.compile
                 }
             }
             stage('unit tests'){
                 steps {
                     echo 'unit tests'
+                }
+            }
+            stage('Quality control'){
+                steps {
+                    echo 'Quality control'
+                }
+            }
+            stage('upload code to centralized place'){
+                steps {
+                    echo 'uploaded code'
                 }
             }
         }
