@@ -5,8 +5,10 @@ def call(){
         }
         stages{
             stage('compile/build'){
-                script {
-                    common.compile
+                stage {
+                    script {
+                        common.compile
+                    }
                 }
             }
             stage('unit tests'){
