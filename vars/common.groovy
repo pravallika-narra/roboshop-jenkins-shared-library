@@ -15,7 +15,7 @@ def unittests(){
         }
         catch(Exception e)
         {
-            email(email_note:"unit test failed")
+            email()
         }
     }
     if(app_lang=="maven"){
@@ -23,7 +23,7 @@ def unittests(){
     }
 }
 
-def email(String email_note)
+def email()
 {
     mail bcc: '', body: 'TEST', cc: '', from: 'pravallikanarra99@gmail.com', replyTo: '', subject: 'TEST-JENKINS', to: 'pravallikanarra99@gmail.com'
 
