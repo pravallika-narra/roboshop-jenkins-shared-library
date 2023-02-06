@@ -23,7 +23,7 @@ def unittests(){
     }
 }
 
-def email(string email_note)
+def email(String email_note)
 {
     mail bcc: '', body: 'TEST', cc: '', from: 'pravallikanarra99@gmail.com', replyTo: '', subject: 'TEST-JENKINS', to: 'pravallikanarra99@gmail.com'
 
