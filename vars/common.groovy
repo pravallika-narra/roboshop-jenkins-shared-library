@@ -8,7 +8,7 @@ def compile(){
 }
 
 def unittests(){
-    if(app_lan=="nodejs")
+    if(app_lang=="nodejs")
     {
         try{
             sh 'npm test'
